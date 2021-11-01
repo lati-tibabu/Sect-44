@@ -1,0 +1,225 @@
+* {
+    font-family: montserrat;
+    transition: 0.5s;
+}
+body {
+    padding: 5px;
+    margin: 5px;
+    display: grid;
+    background: rgb(255, 255, 255);
+}
+header{
+    background: #008080;
+    display: flex;
+}
+nav {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    border-radius: 14px;
+    flex: 9;
+}
+nav ul{
+    float: right;
+    margin-right: 70px;
+    margin-top: 10px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 10px;
+
+}
+nav ul li {
+    list-style-type: none;
+    height: auto;
+    padding: 4px;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+li a:hover, li a:active{
+    /*font-size: larger;*/
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+h1 {
+    text-align: center;
+}
+.logo {
+    width: 100px;
+    padding: 10px;
+    border-radius: 50px;
+    flex: 2;
+}
+.astulogo{
+    flex: 2;
+    width: 100px;
+    background: white;
+    border-radius: 50%;
+}
+main{
+    padding: 5px;
+    color: black;
+    margin-top: 170px;
+    height: inherit;
+}
+main h1{
+    color: white;
+    text-align: center; 
+    background: #00cece;
+    transition: 1s;
+
+}
+footer{
+    margin-bottom: 0;
+    height: 20px;
+    color: white;
+    background: black;
+    text-align: center;
+    padding-bottom: 6px;
+    display: flex;
+    margin-top: 500px;
+}
+.ins {
+    box-shadow: 3px 3px rgb(0, 102, 255);
+    border-radius: 0px;
+    color: rgb(0, 84, 180);
+    list-style-type: none;
+    font-weight: bold;
+}
+.inst {
+    color: black;
+}
+div ul p {
+    color: teal;
+    text-align: center;
+}
+span {
+    padding: 14px;
+}
+table {
+    background: #008080;
+}
+td,th {
+    border: .2px solid white;
+    padding: 14px;
+    background: #ffffff;
+}
+th {
+    background: #00cece;
+    color: white;
+}
+th:hover{
+    font-size: large;
+    cursor: pointer;
+    transition: .3s;
+}
+tr td:hover{
+    background: yellow;
+    transition: .8s;
+    cursor: pointer;
+}
+.head {
+    width: 100%;
+}
+div ul .teacher li {
+    text-decoration: none;
+    list-style-type: square;
+}
+button{
+    font-size: larger;
+    background: rgb(0, 175, 166);
+    color: white;
+    align-items: center;
+    padding: 1px;
+    margin: 5px;
+    border-radius: 1px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    text-decoration: none;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.library {
+    display: flex;
+}
+.library div{
+    flex: 3;
+}
+.library span{
+    flex: 1;
+}
+.mate {
+    margin: 10px;
+    padding: 17px;
+    color: #ffffff;
+    background: #039797;
+    height: 100%;
+    border-radius: 10px;
+}
+.mate p{
+    padding: 10px;
+}
+.mate p:hover{
+    cursor: pointer;
+    font-size: 25px;
+    transition: 1s;
+    text-align: center;
+    background: #027a7a;
+    border-radius: 30px 0 30px 0;
+}
+main h2 b{
+    color: green;
+}
+main h2 b:hover{
+    color: tomato;
+    font-size: larger;
+    transition: .5s;
+    cursor: pointer;
+}
+.arrow{
+    /*position: absolute;*/
+    text-decoration: none;
+    width: 70px;
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px; 
+    height: auto;
+}
+.arrow:hover{
+    border: 3px solid white;
+    border-radius: 30px;
+    background: #00a0a0;
+}
+/*@media (max-width: 600px){
+header{
+    display: flex;
+    height: 150px;
+}
+header nav ul{
+    flex: 1;
+    float: right;
+    display: inline;
+    position: relative;
+}
+header span .space{
+    flex: 4;
+    width: 140px;
+}
+.logo{
+    flex: 1;
+    display: block;
+}
+}*/

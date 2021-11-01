@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+header{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+}
+header nav div .logo{
+    width: 100px;
+}
+nav{
+    width: auto;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: baseline;
+    /*background: rgb(0, 175, 166);*/
+    background-image: linear-gradient(to bottom right, rgb(0, 230, 218), rgb(0, 96, 223));
+}
+div img{
+    flex: .5;
+}
+div h1{
+    color: rgb(255, 255, 255);
+    flex: 2;
+    font-size: 60px;
+    padding: 15px;
+    align-items: center;
+}
+header nav div #astu{
+    background: white;
+    border-radius: 50%;
+    align-items: center;
+}
+header nav div #sec{
+    border-radius: 20px ;
+}
+main{
+    margin-right: 10px;
+    margin-left: 10px;
+    background-image: linear-gradient(to top right,rgb(0, 97, 223),rgb(255, 0, 242) );
+    justify-content: center;
+}
+main div ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main div ul li{
+    list-style: none;
+    text-decoration: none;
+    padding: 20px;
+    padding: 50px;
+    width: 100px;
+}
+main div ul li{
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main div ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+main div ul li svg{
+    margin: auto;
+    color: rgb(255, 255, 255);
+    width: 40px;
+    justify-content: center;
+    text-align: center;
+}
+footer{
+    margin: auto;
+    bottom: 0;
+    text-align: center;
+}
+/*@media screen and (min-width: 480px)*/
+@media (max-width: 500px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        display: block;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+    }
+    main{
+        /*display: block;
+        margin: auto;*/
+        width: 100%;
+        justify-content: center;
+    }
+}
