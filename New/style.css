@@ -9,7 +9,7 @@ body {
     background: rgb(255, 255, 255);
 }
 header{
-    background: #008080;
+    background-image: linear-gradient(to bottom right, rgb(0, 230, 218), rgb(0, 96, 223));
     display: flex;
 }
 nav {
@@ -74,7 +74,7 @@ main{
 main h1{
     color: white;
     text-align: center; 
-    background: #00cece;
+    background-image: linear-gradient(to top right,rgb(0, 97, 223),rgb(255, 0, 242) );
     transition: 1s;
 
 }
@@ -133,20 +133,45 @@ tr td:hover{
 div ul .teacher li {
     text-decoration: none;
     list-style-type: square;
+    justify-content: center;
 }
-button{
-    font-size: larger;
-    background: rgb(0, 175, 166);
-    color: white;
-    align-items: center;
-    padding: 1px;
-    margin: 5px;
-    border-radius: 1px;
-    text-align: center;
-    margin: auto;
+main .library{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3px;
+    margin: 5px;
+    background: rgb(0, 183, 255);
+}
+main div a{
     text-decoration: none;
-    border: none;
+    padding: 5px;
+}
+main span a{
+    text-decoration: none;
+    color: #ffffff;
+    background: rgb(12, 100, 201);
+    padding: 10px;
+    margin: 20px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main span a:hover{
+    background-image: linear-gradient(to bottom right, rgb(12, 100, 201), rgb(60, 163, 248));
+    transition: .3s;
+    border-radius: 5px;
+    padding: 20px;
+    left: 30px;
+}
+main span a svg{
+    width: 30px;
+    display: block;
+}
+main div a span{
+    color: #ffffff;
 }
 button:hover{
     cursor: pointer;
@@ -164,7 +189,7 @@ button:hover{
     margin: 10px;
     padding: 17px;
     color: #ffffff;
-    background: #039797;
+    background-image: linear-gradient(to bottom right, rgb(0, 96, 223),rgb(0, 230, 218));
     height: 100%;
     border-radius: 10px;
 }
@@ -176,7 +201,7 @@ button:hover{
     font-size: 25px;
     transition: 1s;
     text-align: center;
-    background: #027a7a;
+    background-image: linear-gradient(to bottom right, rgb(0, 96, 223),rgb(0, 230, 218));
     border-radius: 30px 0 30px 0;
 }
 main h2 b{
@@ -197,11 +222,20 @@ main h2 b:hover{
     margin-bottom: 10px;
     margin-top: 10px; 
     height: auto;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 .arrow:hover{
-    border: 3px solid white;
-    border-radius: 30px;
     background: #00a0a0;
+}
+main a button{
+    border: none;
+    background: #039797;
+    color: #ffffff;
+    padding: 10px;
+    float: right;
+    border-radius: 20px;
+    position: fixed;
 }
 /*@media (max-width: 600px){
 header{
