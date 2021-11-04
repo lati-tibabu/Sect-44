@@ -12,6 +12,7 @@ header{
 }
 header nav div .logo{
     width: 100px;
+    align-items: center;
 }
 nav{
     width: auto;
@@ -36,9 +37,12 @@ header nav div #astu{
     background: white;
     border-radius: 50%;
     align-items: center;
+    float: right;
 }
 header nav div #sec{
-    border-radius: 20px ;
+    background: white;
+    border-radius: 50%;
+    float: left;
 }
 main{
     margin-right: 10px;
