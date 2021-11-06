@@ -89,6 +89,17 @@ footer{
     bottom: 0;
     text-align: center;
 }
+span{
+    padding: 15px;
+}
+span div p{
+    color: white;
+    background: yellowgreen;
+    padding: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
 /*@media screen and (min-width: 480px)*/
 @media (max-width: 500px){
     body{
