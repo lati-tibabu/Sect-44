@@ -101,6 +101,11 @@ span div p{
     border-radius: 10px;
     text-align: center;
 }
+main div ul li:hover{
+    border-radius: 8px;
+    transition: .3s;
+    background: rgba(0, 0, 0, 0.13);
+}
 /*@media screen and (min-width: 480px)*/
 @media (max-width: 500px){
     body{
