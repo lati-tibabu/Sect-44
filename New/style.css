@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Josefin+Sans:wght@500&display=swap');
 * {
-    font-family: montserrat;
+    font-family: 'Josefin Sans', sans-serif;
     transition: 0.5s;
 }
 body {
