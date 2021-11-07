@@ -80,14 +80,14 @@ main h1{
 
 }
 footer{
+    position: absolute;
     margin-bottom: 0;
     height: 20px;
     color: white;
     background: black;
-    text-align: center;
-    padding-bottom: 6px;
     display: flex;
-    margin-top: 500px;
+    justify-content: center;
+    text-align: center;
 }
 .ins {
     box-shadow: 3px 3px rgb(0, 102, 255);
