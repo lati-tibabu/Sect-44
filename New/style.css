@@ -197,6 +197,10 @@ button:hover{
 .mate p{
     padding: 10px;
 }
+.mate::selection{
+    color: rgb(255, 255, 255);
+    background: rgba(255, 0, 212, 0.473);
+}
 .mate p:hover{
     cursor: pointer;
     font-size: 25px;
