@@ -227,7 +227,7 @@ main h2 b:hover{
     margin-top: 10px; 
     height: auto;
     border: 3px solid white;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 .arrow:hover{
     background: #00a0a0;
