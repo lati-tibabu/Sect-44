@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgba(47, 255, 99, 0.205);
+        }
+
+        .board {
+            padding: 10px;
+            margin: auto;
+            width: auto;
+            height: auto;
+            background: gray;
+            color: white;
+            border-radius: 10px;
+        }
+        .board:hover{
+            background: rgba(0, 53, 199, 0.623);
+        }
+
+        button {
+            font-family: montserrat;
+            border: 1px solid greenyellow;
+            background: none;
+            padding: 5px;
+            margin: 7px;
+            border-radius: 8px;
+
+        }
+        button:hover{
+            border-radius: 8px;
+            background: greenyellow;
+        }
+        #inputBox input{
+            font-family: montserrat;
+            background: none;
+            border: 1px solid gray;
+            padding: 5px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+        .title {
+            background: rgb(101, 156, 18);
+            color: white;
+            padding: 12px;
+            text-align: center;
+            position: relative;
+            border-radius: 5px;
+        }
+        .boxx{
+            width: 15px;
+        }
+        #inputBox input:hover{
+            background: rgba(172, 255, 47, 0.267);
+        }
+    </style>
+    <title>quadratic equation solver</title>
+</head>
+<body>
+    <h3 class="title">Quadratic Equation Solver</h3>
+    <p>Quadratic equation is equation written in the form of: <br>
+    <h3>ax<sup>2</sup>+bx+c</h3> <br>
+    Enter the value of a, b and c in the following box and get the solution;
+    <br>
+    <div id = "inputBox">
+        <input class = "boxx" type="text" placeholder="a" id="a">x<sup>2</sup>+
+        <input class = "boxx" type="text" placeholder="b" id="b">x+
+        <input class = "boxx" type="text" placeholder="c" id="c"> <br>
+    </div>
+    <button type="button" onclick="getval()">Solve</button><br>
+    </p>
+    <h4><br>The Solution is: <br></h4>
+    <div id="result" class="board">
+        Solution will appear here!
+    </div>
+</body>
+<script>
+    function getval() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var c = document.getElementById("c").value;
+        a = Number(a);
+        b = Number(b);
+        c = Number(c);
+        var d = 4 * a * c;
+        var e = b * b;
+        var f = e - d;
+        var g = Math.sqrt(f)
+        var x1 = (0 - b + g) / 2 * a;
+        var x2 = (0 - b - g) / 2 * a;
+        if (f < 0) {
+            document.getElementById("result").innerHTML = ("Your equation was: " + a + "x<sup>2</sup>" + "+" + b + "x" + "+" + c + "<br>" +
+                "The equation has no real solution!");
+        }
+        else if (a == 0 && b == 0 && c == 0) {
+            document.getElementById("result").innerHTML = ("Zero, not valid input");
+        }
+        else if (f == 0) {
+            document.getElementById("result").innerHTML = (
+                "Your equation was: " + a + "x<sup>2</sup>" + "+" + b + "x" + "+" + c + "<br>" +
+                "It has only one solution" + "<br>" + "x = " + x1);
+        }
+        else {
+            document.getElementById("result").innerHTML = (
+                "Your equation was: " + a + "x<sup>2</sup>" + "+" + b + "x" + "+" + c + "<br>" +
+                "It has two solutions" + "<br>" + "X" + "<sub>1</sub> = " + x1 + "<br>" + "X" + "<sub>2</sub> = " + x2
+            );
+        }
+    }
+</script>
+</html>
